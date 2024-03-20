@@ -1,10 +1,10 @@
-# FortiOD Device Tracker component for Home Assistant
+# FortiOS Device Tracker component for Home Assistant
 this is a custom component for Home Assistant that adds compatability for older Fortinet devices.
 
 the offical FortiOS Device Tracker doesn't support devices running FortiOS under then 6.4.3, this does
 it should support all the way from 5.6 but I've only tested it on 6.0
 
-along with compatibliy with older devices it also adds the ability to recognize FortiOS tags as either blacklist or whitelist terms
+along with compatibility with older devices it also adds the ability to recognize FortiOS tags as either blacklist or whitelist terms
 
 here's an example configuration:
 ```yaml
