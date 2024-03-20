@@ -1,0 +1,1 @@
+DOMAIN = "fortios_legacy"

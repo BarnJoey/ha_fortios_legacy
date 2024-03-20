@@ -1,0 +1,12 @@
+{
+  "codeowners": ["@barnjoey"],
+  "config_flow": false,
+  "dependencies": [],
+  "domain": "fortios_legacy",
+  "name": "FortiOS (Legacy)",
+  "version": "2.0.0",
+  "documentation": "https://www.home-assistant.io/integrations/fortios",
+  "iot_class": "local_polling",
+  "loggers": ["fortiosapi", "paramiko"],
+  "requirements": ["fortiosapi==1.0.5"]
+}
