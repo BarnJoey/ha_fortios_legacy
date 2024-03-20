@@ -7,7 +7,7 @@ it should support all the way from 5.6 but I've only tested it on 6.0
 along with compatibliy with older devices it also adds the ability to recognize FortiOS tags as either blacklist or whitelist terms
 
 here's an example configuration:
-'''
+```yaml
 device_tracker:
   - platform: fortios_legacy
     host: <hostname / ip+port of fortinet device>
@@ -16,7 +16,7 @@ device_tracker:
     max_last_seen: 60 (default)
     whitelist: "NULL" (default)
     blacklist: "NULL" (default)
-'''
+```
 
 Host, Token and Verify SSL work exactly like the offical component, you can view the doc here: https://www.home-assistant.io/integrations/fortios/
 
