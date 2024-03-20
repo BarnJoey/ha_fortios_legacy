@@ -20,13 +20,19 @@ device_tracker:
 
 Host, Token and Verify SSL work exactly like the offical component, you can view the doc here: https://www.home-assistant.io/integrations/fortios/
 
-max_last_seen:
+```yaml
+max_last_seen: 60
+```
 this controls the maximum amount of seconds that can elapsed between when your fortinet device last saw a device before it considers the device away
 
-whitelist:
+```yaml
+whitelist: "ha_tracking"
+```
 put in the name of a tag exactly how it appears in FortiOS to have home assistant recognize it as a whitelist term. avoid using spaces
 
-blacklist:
+```yaml
+blacklist: "ha_tracking_exclude"
+```
 exactly like the whitelist but will prevent devices from being recognized by home assistant
 
 the blacklist / whitelist are totally optional, you can use neither and track all devices or use one or both. the blacklist will supercede the whitelist
