@@ -62,12 +62,11 @@ def get_scanner(hass: HomeAssistant, config: ConfigType) -> FortiOSDeviceScanner
     current_version = AwesomeVersion(status_json["version"])
     maximum_version = AwesomeVersion("6.4.3")
     if current_version >= maximum_version:
-        _LOGGER.error(
+        _LOGGER.warning(
             "Detected newer FortiOS version: %s. please use offical FortiOS component for Version %s and newer",
             current_version,
             maximum_version,
         )
-        return None
 
     return FortiOSDeviceScanner(fgt, config)
 
